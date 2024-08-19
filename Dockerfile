@@ -9,7 +9,6 @@ WORKDIR /app
 ADD target/cloud_native_project-0.0.1-SNAPSHOT.jar .
 
 
-
 ENTRYPOINT ["sh", "-c", "set -e && java -XX:+PrintFlagsFinal \
                                            -XX:+HeapDumpOnOutOfMemoryError \
                                            -XX:HeapDumpPath=/heapdump/heapdump.hprof \
